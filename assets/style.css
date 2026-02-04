@@ -225,11 +225,11 @@ footer {
 }
 
 .nav-logo img {
-  height: 36px;
+  height: 32px;        /* ← размер как у буквы K */
   width: auto;
-  max-width: 100%;
   display: block;
 }
+
 
 
 /* MOBILE */
@@ -253,13 +253,6 @@ footer {
   .nav-links {
     display: none;
   }
-}
-
-/* Navbar logo — exact size like text */
-.nav-logo img {
-  height: 26px;      /* ← ключевая строка */
-  width: auto;
-  display: block;
 }
 
 
