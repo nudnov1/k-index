@@ -114,13 +114,8 @@ footer {
 }
 /* Experience blocks */
 .experience-block {
-  margin-bottom: 48px; /* расстояние между блоками */
+  margin-bottom: 40px;
 }
-
-.experience-block:last-child {
-  margin-bottom: 0; /* аккуратно убираем лишний отступ в конце */
-}
-
 
 /* Header: role + company */
 .exp-header {
@@ -172,4 +167,122 @@ footer {
 .skills .icon {
   width: 24px;
   text-align: center;
+}
+.exp-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 6px 0 12px;
+}
+
+.exp-text {
+  color: var(--text);
+  line-height: 1.5;
+}
+.exp-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+.minimal-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+  max-width: 720px;
+}
+
+.minimal-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.minimal-list .icon {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.minimal-list strong {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.minimal-list .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.minimal-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+  max-width: 720px;
+}
+
+.minimal-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.minimal-list .icon {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.minimal-list strong {
+  font-weight: 500;
+  color: var(--text);
+}
+.contact-details {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-details a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: var(--accent);
+}
+/* Core Areas block */
+.core-areas {
+  margin: 48px auto 56px;
+  max-width: 760px;
+  text-align: center;
+}
+
+.core-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 24px;
+}
+
+.core-item {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .core-grid {
+    grid-template-columns: 1fr;
+  }
 }
