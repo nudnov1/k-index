@@ -218,19 +218,30 @@ footer {
 }
 
 
-/* NAV LOGO (ONLY NAV) */
+/* NAV LOGO (ONLY NAV) 
 .nav-logo {
   display: flex;
   align-items: center;
 }
 
 .nav-logo img {
-  height: 1em;        /* ← размер как у буквы K */
+  height: 1em;        /* ← размер как у буквы K 
   width: auto;
   display: block;
 }
+*/
+/* NAVBAR LOGO — FINAL FIX */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
 
-
+.nav-logo img.logo {
+  height: 24px;        /* 👈 размер как буква K */
+  width: auto;         /* сохраняем пропорции */
+  max-height: 24px;    /* защита от переполнения */
+  object-fit: contain;
+}
 
 /* MOBILE */
 @media (max-width: 640px) {
@@ -254,6 +265,7 @@ footer {
     display: none;
   }
 }
+
 
 
 
