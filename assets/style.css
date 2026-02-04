@@ -27,21 +27,6 @@ nav {
   backdrop-filter: blur(10px);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 36px;
-  width: auto;
-  display: block;
-  transition: opacity 0.2s ease;
-}
-
-.logo img:hover {
-  opacity: 0.85;
-}
 
 .nav-links a {
   margin-left: 20px;
@@ -232,10 +217,25 @@ footer {
   padding: 40px;
 }
 
+
+/* NAV LOGO (ONLY NAV) */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 36px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+
 /* MOBILE */
 @media (max-width: 640px) {
   .logo img {
-    height: 30px;
+    height: 28px;
   }
 
   .hero {
@@ -254,4 +254,5 @@ footer {
     display: none;
   }
 }
+
 
