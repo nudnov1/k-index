@@ -261,3 +261,14 @@ main img {
   height: auto;
 }
 
+
+/* HARD FIX */
+nav img {
+  height: 36px !important;
+  width: auto !important;
+  max-height: 36px !important;
+}
+
+main img {
+  display: none !important;
+}
