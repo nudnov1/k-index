@@ -32,10 +32,11 @@ nav {
 }
 
 .logo img {
-  height: 36px;        /* оптимально для navbar */
+  height: 36px;        /* КЛЮЧЕВО */
   width: auto;
   display: block;
 }
+
 
 @media (min-width: 768px) {
   .logo img {
@@ -303,3 +304,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
