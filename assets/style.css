@@ -256,27 +256,3 @@ footer {
 }
 
 
-main img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* HARD FIX */
-nav img {
-  height: 36px !important;
-  width: auto !important;
-  max-height: 36px !important;
-}
-
-main img {
-  display: none !important;
-}
-/* === LOGO HARD FIX === */
-.nav-logo img {
-  height: 40px;
-  width: auto;
-  max-height: 40px;
-  display: block;
-}
-
