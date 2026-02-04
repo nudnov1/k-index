@@ -168,11 +168,6 @@ footer {
   width: 24px;
   text-align: center;
 }
-.exp-meta {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin: 6px 0 12px;
-}
 
 .exp-text {
   color: var(--text);
@@ -182,19 +177,6 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
   margin-top: 6px;
-}
-.minimal-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 32px;
-  max-width: 720px;
-}
-
-.minimal-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  margin-bottom: 18px;
 }
 
 .minimal-list .icon {
@@ -286,3 +268,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
