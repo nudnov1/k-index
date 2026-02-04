@@ -76,6 +76,12 @@ nav {
   margin-top: 40px;
 }
 
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: none; /* hero не должен содержать картинки */
+}
+
 .btn {
   padding: 14px 28px;
   border-radius: 12px;
@@ -248,3 +254,4 @@ footer {
     display: none;
   }
 }
+
