@@ -114,8 +114,13 @@ footer {
 }
 /* Experience blocks */
 .experience-block {
-  margin-bottom: 40px;
+  margin-bottom: 48px; /* расстояние между блоками */
 }
+
+.experience-block:last-child {
+  margin-bottom: 0; /* аккуратно убираем лишний отступ в конце */
+}
+
 
 /* Header: role + company */
 .exp-header {
