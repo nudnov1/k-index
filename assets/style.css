@@ -272,3 +272,11 @@ nav img {
 main img {
   display: none !important;
 }
+/* === LOGO HARD FIX === */
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  max-height: 40px;
+  display: block;
+}
+
