@@ -112,3 +112,37 @@ footer {
   color: var(--muted);
   padding: 40px;
 }
+/* Experience blocks */
+.experience-block {
+  margin-bottom: 40px;
+}
+
+/* Header: role + company */
+.exp-header {
+  margin-bottom: 18px;
+}
+
+.exp-role {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.exp-company {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Description */
+.exp-desc ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.exp-desc li {
+  margin-bottom: 10px;
+  color: var(--muted);
+  line-height: 1.55;
+}
