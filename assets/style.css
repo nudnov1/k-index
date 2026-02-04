@@ -258,4 +258,18 @@ footer {
   }
 }
 
+@media (max-width: 640px) {
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
 
