@@ -185,11 +185,6 @@ footer {
   margin-top: 2px;
 }
 
-.minimal-list strong {
-  font-weight: 500;
-  color: var(--text);
-}
-
 .minimal-list .meta {
   color: var(--muted);
   font-size: 0.9rem;
@@ -206,12 +201,6 @@ footer {
   align-items: flex-start;
   gap: 14px;
   margin-bottom: 18px;
-}
-
-.minimal-list .icon {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  margin-top: 2px;
 }
 
 .minimal-list strong {
@@ -268,4 +257,5 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
