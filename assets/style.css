@@ -478,23 +478,30 @@ nav img {
 }
 
 
-/* ===== NAV FIX — SAFE ===== */
+/* ===== MOBILE NAV FIX ===== */
 @media (max-width: 768px) {
   nav {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 16px;
     gap: 12px;
+  }
+
+  .logo {
+    margin-bottom: 6px;
   }
 
   .nav-links {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .nav-links a {
-    margin: 0;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 2px 0;
   }
 }
