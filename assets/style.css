@@ -450,3 +450,30 @@ nav img {
     text-align: center;
   }
 }
+/* ===== Mobile navigation cleanup ===== */
+@media (max-width: 768px) {
+
+  header nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding: 8px 12px;
+  }
+
+  header nav li {
+    flex: 0 0 auto;
+  }
+
+  header nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+}
+
