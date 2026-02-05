@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Tools Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">
+    <img src="assets/images/logo.png" alt="Katya Nudnov logo">
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="courses.html">Courses</a>
+    <a href="skills.html">Skills</a>
+    <a href="languages.html">Languages</a>
+    <a href="ai-tools-library.html">AI Tools Library</a>
+  </div>
+</nav>
+
+<main class="hero">
+
+  <h1>AI Tools Library</h1>
+  <p class="subtitle">
+    Curated AI tools for marketing, content creation, automation and creative workflows.
+  </p>
+
+  <!-- SEARCH -->
+  <input
+    type="text"
+    id="searchInput"
+    class="tools-search"
+    placeholder="Search tools..."
+  >
+
+  <!-- FILTERS -->
+  <div class="tools-filters">
+    <button class="btn ghost filter-btn active" data-category="all">All</button>
+    <button class="btn ghost filter-btn" data-category="Images">Images</button>
+    <button class="btn ghost filter-btn" data-category="Text">Text & Copy</button>
+    <button class="btn ghost filter-btn" data-category="Video">Video</button>
+    <button class="btn ghost filter-btn" data-category="Audio">Audio</button>
+    <button class="btn ghost filter-btn" data-category="Prompts">Prompts</button>
+    <button class="btn ghost filter-btn" data-category="Automation">Automation</button>
+    <button class="btn ghost filter-btn" data-category="Marketing">Marketing</button>
+  </div>
+
+  <!-- GRID -->
+  <section class="tools-grid" id="toolsGrid">
+
+    <!-- IMAGES -->
+    <div class="tool-card" data-category="Images">
+      <h3>Midjourney</h3><p>High-quality AI image generation.</p>
+      <button class="btn ghost" onclick="openTool('https://midjourney.com')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Images">
+      <h3>Leonardo AI</h3><p>Creative image generation and assets.</p>
+      <button class="btn ghost" onclick="openTool('https://leonardo.ai')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Images">
+      <h3>DALL·E</h3><p>AI images from text prompts.</p>
+      <button class="btn ghost" onclick="openTool('https://openai.com/dall-e')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Images">
+      <h3>Canva AI</h3><p>Designs with AI assistance.</p>
+      <button class="btn ghost" onclick="openTool('https://canva.com')">Open</button>
+    </div>
+
+    <!-- TEXT -->
+    <div class="tool-card" data-category="Text">
+      <h3>ChatGPT</h3><p>AI assistant for writing & ideas.</p>
+      <button class="btn ghost" onclick="openTool('https://chat.openai.com')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Text">
+      <h3>Copy.ai</h3><p>Marketing copy generation.</p>
+      <button class="btn ghost" onclick="openTool('https://copy.ai')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Text">
+      <h3>Jasper</h3><p>AI content for marketing teams.</p>
+      <button class="btn ghost" onclick="openTool('https://jasper.ai')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Text">
+      <h3>Notion AI</h3><p>Writing & planning inside Notion.</p>
+      <button class="btn ghost" onclick="openTool('https://notion.so')">Open</button>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="tool-card" data-category="Video">
+      <h3>Synthesia</h3><p>AI videos with avatars.</p>
+      <button class="btn ghost" onclick="openTool('https://synthesia.io')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Video">
+      <h3>Pictory</h3><p>Turn text into videos.</p>
+      <button class="btn ghost" onclick="openTool('https://pictory.ai')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Video">
+      <h3>Runway</h3><p>AI video editing tools.</p>
+      <button class="btn ghost" onclick="openTool('https://runwayml.com')">Open</button>
+    </div>
+
+    <!-- AUDIO -->
+    <div class="tool-card" data-category="Audio">
+      <h3>ElevenLabs</h3><p>AI voice generation.</p>
+      <button class="btn ghost" onclick="openTool('https://elevenlabs.io')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Audio">
+      <h3>Murf</h3><p>Text-to-speech voices.</p>
+      <button class="btn ghost" onclick="openTool('https://murf.ai')">Open</button>
+    </div>
+
+    <!-- PROMPTS -->
+    <div class="tool-card" data-category="Prompts">
+      <h3>Public Prompts</h3><p>Prompt library for AI tools.</p>
+      <button class="btn ghost" onclick="openTool('https://publicprompts.art')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Prompts">
+      <h3>PromptBase</h3><p>Buy & sell prompts.</p>
+      <button class="btn ghost" onclick="openTool('https://promptbase.com')">Open</button>
+    </div>
+
+    <!-- AUTOMATION -->
+    <div class="tool-card" data-category="Automation">
+      <h3>Zapier</h3><p>Automate workflows.</p>
+      <button class="btn ghost" onclick="openTool('https://zapier.com')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Automation">
+      <h3>Make</h3><p>Visual automation builder.</p>
+      <button class="btn ghost" onclick="openTool('https://make.com')">Open</button>
+    </div>
+
+    <!-- MARKETING -->
+    <div class="tool-card" data-category="Marketing">
+      <h3>AdCreative.ai</h3><p>Create ads with AI.</p>
+      <button class="btn ghost" onclick="openTool('https://adcreative.ai')">Open</button>
+    </div>
+    <div class="tool-card" data-category="Marketing">
+      <h3>Ocoya</h3><p>AI social media marketing.</p>
+      <button class="btn ghost" onclick="openTool('https://ocoya.com')">Open</button>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Katya Nudnov
+</footer>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.tool-card');
+let activeCategory = 'all';
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeCategory = btn.dataset.category;
+    applyFilters();
+  });
+});
+
+searchInput.addEventListener('input', applyFilters);
+
+function applyFilters() {
+  const q = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    const cat = card.dataset.category;
+    const show =
+      (activeCategory === 'all' || cat === activeCategory) &&
+      text.includes(q);
+    card.style.display = show ? 'block' : 'none';
+  });
+}
+
+function openTool(url) {
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
