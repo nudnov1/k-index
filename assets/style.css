@@ -477,3 +477,24 @@ nav img {
   }
 }
 
+
+/* ===== NAV FIX — SAFE ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .nav-links a {
+    margin: 0;
+    font-size: 14px;
+  }
+}
