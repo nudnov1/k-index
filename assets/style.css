@@ -17,13 +17,36 @@ body {
   color: var(--text);
 }
 
+/* ===== FORCE NAV IN ONE ROW ===== */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: rgba(18,24,33,0.8);
+  padding: 20px 60px;
+  background: rgba(18,24,33,0.9);
   backdrop-filter: blur(10px);
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: nowrap;      /* запрещаем перенос */
+}
+
+.nav-links a {
+  margin: 0;
+  font-size: 15px;
+  white-space: nowrap;    /* текст не переносится */
+}
+
+/* УБИРАЕМ ВСЮ мобильную колонку */
+@media (max-width: 9999px) {
+  .nav-links {
+    flex-direction: row !important;
+  }
 }
 
 .logo {
@@ -682,4 +705,5 @@ nav {
     flex-direction: row !important;
   }
 }
+
 
