@@ -329,12 +329,7 @@ footer {
   line-height: 1.4;
 }
 
-/* Mobile */
-@media (max-width: 640px) {
-  .core-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 /* =========================
    LOGO FIX — SAFE PATCH
    DO NOT TOUCH LAYOUT
