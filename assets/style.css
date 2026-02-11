@@ -548,3 +548,43 @@ nav img {
   transform: translateY(-2px);
   opacity: 0.85;
 }
+/* --- tools-platforms.html --- */
+.tools-category h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #e5e7eb;
+}
+
+.tools-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.tool-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.tool-item:hover {
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+}
+
+.tool-name {
+  display: block;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.tool-note {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.65;
+  margin-top: 4px;
+}
+/* --- --- */
