@@ -726,6 +726,28 @@ nav {
   }
 }
 
+/* ===== HOW I WORK CLEAN GRID ===== */
+
+.section-title {
+  margin-top: 70px;
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.work-grid {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  gap: 22px;
+
+  justify-content: center;   /* всегда по центру */
+}
+
 
 
 
