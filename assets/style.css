@@ -17,29 +17,38 @@ body {
   color: var(--text);
 }
 
-/* ===== FORCE NAV IN ONE ROW ===== */
+/* ===== NAV CLEAN FIX ===== */
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 18px 40px;
   background: rgba(18,24,33,0.9);
   backdrop-filter: blur(10px);
-  white-space: nowrap;
+  position: relative;
 }
 
+/* Nav links container */
 .nav-links {
   display: flex;
+  gap: 28px;
   align-items: center;
-  gap: 32px;
-  flex-wrap: nowrap;      /* запрещаем перенос */
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;        /* Firefox */
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;                /* Chrome */
 }
 
 .nav-links a {
-  margin: 0;
   font-size: 15px;
-  white-space: nowrap;    /* текст не переносится */
+  color: #cfd8e3;
+  text-decoration: none;
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 /* УБИРАЕМ ВСЮ мобильную колонку */
@@ -705,5 +714,6 @@ nav {
     flex-direction: row !important;
   }
 }
+
 
 
