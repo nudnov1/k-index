@@ -373,32 +373,6 @@ footer {
 }
 
 
-/* =========================
-   LOGO FIX — SAFE PATCH
-   DO NOT TOUCH LAYOUT
-========================= */
-
-.nav-logo img,
-.logo img,
-nav img {
-  height: 36px !important;
-  max-height: 36px !important;
-  width: auto !important;
-  max-width: none !important;
-  object-fit: contain;
-  display: block;
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .nav-logo img,
-  .logo img,
-  nav img {
-    height: 32px !important;
-    max-height: 32px !important;
-  }
-}
-
 .tools-search {
   width: 100%;
   max-width: 420px;
@@ -773,6 +747,7 @@ nav {
   font-size: 13px;
   opacity: 0.7;
 }
+
 
 
 
