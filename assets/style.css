@@ -748,6 +748,32 @@ nav {
   justify-content: center;   /* всегда по центру */
 }
 
+.work-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 18px 16px;
+
+  text-align: center;
+
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.07);
+}
+
+.work-card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.work-card p {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
 
 
 
