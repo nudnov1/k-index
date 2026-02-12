@@ -51,6 +51,17 @@ nav {
   flex: 0 0 auto;
 }
 
+nav::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  background: linear-gradient(to right, transparent, rgba(11,15,20,0.9));
+  pointer-events: none;
+}
+
 /* УБИРАЕМ ВСЮ мобильную колонку */
 @media (max-width: 9999px) {
   .nav-links {
@@ -714,6 +725,7 @@ nav {
     flex-direction: row !important;
   }
 }
+
 
 
 
