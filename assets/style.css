@@ -279,3 +279,62 @@ footer {
 .mt-40 {
   margin-top: 40px;
 }
+/* =====================================================
+   PAGE FIXES (restore original layout proportions)
+===================================================== */
+
+/* Section width consistency */
+.section-container {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* Core Areas */
+.core-areas {
+  margin: 48px auto 60px;
+  max-width: 760px;
+  text-align: center;
+}
+
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 24px;
+}
+
+/* Education & Courses */
+.education-section,
+.courses-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.education-card,
+.course-card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Projects spacing */
+.projects-grid {
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+/* Work section */
+.work-grid {
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
