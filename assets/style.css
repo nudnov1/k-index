@@ -648,9 +648,11 @@ nav img {
 .icon {
   display: inline-flex;
   align-items: center;
+  top: -2px; 
   justify-content: center;
   width: 22px;
 }
+
 
 
 
