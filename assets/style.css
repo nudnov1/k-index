@@ -645,3 +645,14 @@ nav img {
 
 
 
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+}
+
+.linkedin-icon svg {
+  color: #0A66C2; /* official LinkedIn blue */
+}
+
