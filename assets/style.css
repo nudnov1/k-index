@@ -653,6 +653,26 @@ nav img {
   width: 22px;
 }
 
+/*--*/
+
+.minimal-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px; /* your text size */
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 1em;   /* SAME size as text */
+  height: 1em;  /* SAME size as text */
+}
+
 
 
 
