@@ -671,6 +671,7 @@ nav img {
 .icon svg {
   width: 1em;   /* SAME size as text */
   height: 1em;  /* SAME size as text */
+  transform: translateY(-3px); /* приподнимаем немного вверх */  
 }
 
 
